@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  display: block;
+  color: red;
+  background-color: purple;
+  font-size: 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.row {
+  margin-bottom: 30px;
+}
+
+.container {
+  width: 1300px;
+  margin:0 auto;
+  margin-bottom: 300px;
+  position: absolute;
+  top:100px;
+  left: 350px;
+}
+
+.immagine {
+  display: inline-block;
+  position: relative;
+}
+
+.badge {
+  background-color: green;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.immagine:nth-child(2) .badge{
+  background-color: red;
+}
+
+.heart-container {
+  text-align: center;
+  opacity: 0;
+}
+
+.heart {
+  color: red;
+  position: absolute;
+  bottom: 15px;
+  font-size: 25px;
+}
+
+.immagine:hover .heart-container {
+  opacity: 1;
+}
